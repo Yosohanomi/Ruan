@@ -49,19 +49,71 @@ section {
     background-color: rgba(78, 134, 115, 0.232);
 }
 
+
+
+/* MAIN */
+
+.d-block {
+    object-fit: cover;
+    height: 160px;
+}
+
+/* POPULARY */
+.populary__books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.populary__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-title {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 700;
+}
+.card-text {
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+.novaposhta:hover,
+.novaposhta:focus {
+    color:blue;
+}
+.ukrposhta:hover,
+.ukrposhta:focus {
+    color:blue;
+}
+
 @media screen and (min-width: 767px) {
     .d-block {
-        height: auto;
-        width: auto;
+        height: 300px;
+    }
+    .hero {
+        padding-top: 0;
+        padding-bottom: 0;
     }
     
     /* POPULARY */
     .populary__list {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 40px;
     }
 
     .hero__title {
@@ -101,54 +153,16 @@ section {
     /* MAIN */
 
     .d-block {
-        height: 20cap;
+        height: 500px;
     }
 
     /* POPULARY */
     .populary__list {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 80px;
     }
-}
-
-/* MAIN */
-
-.d-block {
-    height: 20cap;
-}
-
-/* POPULARY */
-.populary__books {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.card-title {
-    font-family: "Dancing Script", sans-serif;
-    font-weight: 700;
-}
-.card-text {
-    margin-bottom: 10px;
-}
-
-
-/* FOOTER */
-.novaposhta:hover,
-.novaposhta:focus {
-    color:blue;
-}
-.ukrposhta:hover,
-.ukrposhta:focus {
-    color:blue;
 }
